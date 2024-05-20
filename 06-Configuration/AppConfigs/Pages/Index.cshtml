@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@*Here we inject te configration from the DI to be able to retreive the values in the view below*@
+@inject Microsoft.Extensions.Configuration.IConfiguration configuration
+
+<h2>ASP.NET Configurations</h2>
+
+<h3>Email Settings from Configurations</h3>
+<div>
+    <b>Server</b> <span>@configuration["emailSettingz:server"]</span>
+</div>
+<div>
+    <b>From</b> <span>@configuration["emailSettings:from"]</span>
+</div>

@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Lifetimes</h1>
+<div class="float-right"><span class="label badge-info">Call #@(ViewBag.Count)</span></div>
+
+<h4>Controller Operations</h4>
+
+<table class="table" style="width:100%;">
+    <tr>
+        <td align="right"><b>Transient</b></td>
+        <td>@ViewBag.Transient.OperationId</td>
+    </tr>
+    <tr>
+        <td align="right"><b>Scoped</b></td>
+        <td>@ViewBag.Scoped.OperationId</td>
+    </tr>
+    <tr>
+        <td align="right"><b>Singleton</b></td>
+        <td>@ViewBag.Singleton.OperationId</td>
+    </tr>
+    <tr>
+        <td align="right"><b>Instance</b></td>
+        <td>@ViewBag.Instance.OperationId</td>
+    </tr>
+</table>
+
+<h4>Service Operations</h4>
+
+<table class="table" style="width:100%;">
+    <tr>
+        <td align="right"><b>Transient</b></td>
+        <td>@ViewBag.Service.TransientOperation.OperationId</td>
+    </tr>
+    <tr>
+        <td align="right"><b>Scoped</b></td>
+        <td>@ViewBag.Service.ScopedOperation.OperationId</td>
+    </tr>
+    <tr>
+        <td align="right"><b>Singleton</b></td>
+        <td>@ViewBag.Service.SingletonOperation.OperationId</td>
+    </tr>
+    <tr>
+        <td align="right"><b>Instance</b></td>
+        <td>@ViewBag.Service.InstanceOperation.OperationId</td>
+    </tr>
+</table>

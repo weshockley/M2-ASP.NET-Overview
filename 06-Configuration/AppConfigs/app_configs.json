@@ -1,0 +1,6 @@
+{
+  "emailSettings": {
+    "server": "smtp.example.com.json",
+    "from": "John.Doe@example.com.json"
+  }
+}

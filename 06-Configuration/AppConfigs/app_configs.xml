@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <emailSettings>
+    <server>smtp.example.com.xml</server>
+    <from>John.Doe@example.com.xml</from>
+  </emailSettings>
+</configuration>
